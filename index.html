@@ -7,7 +7,7 @@ title: Arts Regis
   
   <h1 class="pageTitle">Trabalhos Recentes</h1>
   
-  
+  <!--
   <ul class="posts noList">
     {% for post in paginator.posts %}
       <li>
@@ -17,6 +17,43 @@ title: Arts Regis
       </li>
     {% endfor %}
   </ul>
+  -->
+  
+  <div class="row">
+    
+					<section id="projects">
+					   <ul id="thumbs" class="portfolio">
+
+                <li class="item-thumbs col-lg-4 design" data-id="id-0" data-type="web">
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}">
+                      <span class="overlay-img"></span>
+                      <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                    <img src="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" 
+                      alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                </li>
+                
+                <li class="item-thumbs col-lg-4 design" data-id="id-0" data-type="web">
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="{{ "/assets/img/works/2.jpg" | prepend: site.baseurl }}">
+                      <span class="overlay-img"></span>
+                      <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                    <img src="{{ "/assets/img/works/2.jpg" | prepend: site.baseurl }}" 
+                      alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                </li>
+                
+                <li class="item-thumbs col-lg-4 design" data-id="id-0" data-type="web">
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="{{ "/assets/img/works/3.jpg" | prepend: site.baseurl }}">
+                      <span class="overlay-img"></span>
+                      <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                    <img src="{{ "/assets/img/works/3.jpg" | prepend: site.baseurl }}" 
+                      alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                </li>
+                
+					   </ul>
+					</section> 
+	 </div>
   
   
   <!-- Pagination links -->

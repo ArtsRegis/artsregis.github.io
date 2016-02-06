@@ -20,50 +20,30 @@ title: Arts Regis
   -->
   
   <div class="row">
-    
-					<section id="projects">
-					   <ul id="thumbs" class="portfolio">
-
-                <li class="item-thumbs col-lg-4 design" data-id="id-0" data-type="web">
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <img src="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" 
-                      alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                </li>
-                
-                <li class="item-thumbs col-lg-4 design" data-id="id-0" data-type="web">
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="{{ "/assets/img/works/2.jpg" | prepend: site.baseurl }}">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <img src="{{ "/assets/img/works/2.jpg" | prepend: site.baseurl }}" 
-                      alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                </li>
-                
-                <li class="item-thumbs col-lg-4 design" data-id="id-0" data-type="web">
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="{{ "/assets/img/works/3.jpg" | prepend: site.baseurl }}">
-                      <span class="overlay-img"></span>
-                      <span class="overlay-img-thumb font-icon-plus"></span>
-                    </a>
-                    <img src="{{ "/assets/img/works/3.jpg" | prepend: site.baseurl }}" 
-                      alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                </li>
-                
-					   </ul>
-					</section> 
+          
+          <div class="galeria-imagens">
+              <div class="m-p-g__thumbs">
+                  <img src="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" data-full="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" class="m-p-g__thumbs-img" />
+				          <img src="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" data-full="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" class="m-p-g__thumbs-img" />
+				          <img src="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" data-full="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" class="m-p-g__thumbs-img" />
+        	 			  <img src="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" data-full="{{ "/assets/img/works/1.jpg" | prepend: site.baseurl }}" class="m-p-g__thumbs-img" /> 
+              </div>
+          </div>
+          
 	 </div>
   
   
   <!-- Pagination links -->
   <div class="pagination">
+    
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous button__outline">Newer Posts</a> 
     {% endif %}
+    
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next button__outline">Older Posts</a>
     {% endif %}
+    
   </div>
   
 </div>

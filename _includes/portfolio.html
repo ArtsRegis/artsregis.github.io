@@ -4,10 +4,11 @@
         <div class="recentitems portfolio">
             {% for index in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14] %}
 
-                {% if index in [0, 4, 5, 9, 10, 14] %}
+                {% if index in [0, 4, 5, 9, 10, 14, 20] %}
 
                     <div class="portfolio-item graphic-design">
                         <div class="he-wrap tpl6">
+                            <p>{{ index }}</p>
                         </div>
                     </div>
 
@@ -15,11 +16,11 @@
 
                     <div class="portfolio-item graphic-design">
                         <div class="he-wrap tpl6">
-                            <img src="{{ "/assets/img/project/portfolio_{% index %}.jpg" | prepend: site.baseurl }}{{ project.img }}" alt="">
+                            <img src="{{ "/assets/img/project/portfolio_{{ index }}.jpg" | prepend: site.baseurl }}{{ project.img }}" alt="">
                             <div class="he-view">
                                 <div class="bg a0" data-animate="fadeIn">
                                     <h3 class="a1" data-animate="fadeInDown">{{ project.title }}</h3>
-                                    <a data-rel="prettyPhoto" href="{{ "/assets/img/project/portfolio_{% index %}.jpg" | prepend: site.baseurl }}{{ project.img }}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                    <a data-rel="prettyPhoto" href="{{ "/assets/img/project/portfolio_{{ index }}.jpg" | prepend: site.baseurl }}{{ project.img }}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
                                     <a href="{{  project.url | prepend: site.baseurl }}" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
                                 </div><!-- he bg -->
                             </div><!-- he view -->

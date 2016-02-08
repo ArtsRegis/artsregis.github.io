@@ -2,11 +2,8 @@
     <div class="portfolio-centered">
         {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
         <div class="recentitems portfolio">
-            {% for index in (0..14) %}
 
-                {{ index }}
-
-            {% endfor %}
+            {% include row_imagens_1.html %}
 
         </div><!-- portfolio -->
     </div><!-- portfolio container -->

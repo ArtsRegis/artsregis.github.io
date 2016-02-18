@@ -1,34 +1,314 @@
----
-layout: index
-title: Home
-permalink: /portfolio
----
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
 
-{% include portfolio.html title="LATEST WORKS" limit=10 %}
+<head>
 
-<div class="container mtb">
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-1">
-            <h4>More About Our Agency.</h4>
-            <p>{{ site.about }}</p>
-            <p><br/><a href="{{ "/about/" | prepend: site.baseurl }}" class="btn btn-theme">More Info</a></p>
-        </div>
+<!-- Basic -->
+<title>Art´s Reges | Portfolio</title>
 
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['question'] %}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-            {% endfor %}
-        </div>
+<!-- Define Charset -->
+<meta charset="utf-8">
 
-        <div class="col-lg-3">
-            <h4>Latest Posts</h4>
-            <div class="hline"></div>
-            {% for post in site.categories['blog'] limit:5 %}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-            {% endfor %}
-        </div>
+<!-- Responsive Metatag -->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    </div><! --/row -->
-</div><! --/container -->
+<!-- Page Description and Author -->
+<meta name="description" content="Margo - Responsive HTML5 Template">
+<meta name="author" content="iThemesLab">
+
+{{ "/assets/css/bootstrap.css" | prepend: site.baseurl }}
+
+<!-- CSS  -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ site.baseurl }}{{ site.baseurl }}css/slicknav.css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/responsive.css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/colors/red.css" title="red" media="screen" />
+
+<!-- JS  -->
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.migrate.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/modernizrr.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/asset/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/nivo-lightbox.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.appear.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/count-to.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.textillate.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.lettering.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.easypiechart.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.parallax.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/js/jquery.slicknav.js"></script>
+
+
+<!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+	<!-- Container -->
+	<div id="container">
+
+		<!-- Start Header -->
+		<div class="hidden-header"></div>
+		<header class="clearfix">
+
+			<!-- Start Header ( Logo & Naviagtion ) -->
+			<div class="navbar navbar-default navbar-top">
+				<div class="container">
+					<div class="navbar-header">
+						<!-- Start Toggle Nav Link For Mobiles -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target=".navbar-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+						<!-- End Toggle Nav Link For Mobiles -->
+						<a class="navbar-brand" href="{{ site.baseurl }}/index.html">
+							<img alt="" src="{{ site.baseurl }}/images/art-reges.png">
+						</a>
+					</div>
+					
+					<div class="navbar-collapse collapse">
+						
+						<!-- Start Navigation List -->
+						<ul class="nav navbar-nav navbar-right">
+						
+							<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+							<li><a href="{{ site.baseurl }}/about.html">Sobre</a></li>
+							<li><a href="{{ site.baseurl }}/contact.html">Contato</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+
+				<!-- Mobile Menu Start -->
+				<ul class="wpb-mobile-menu">
+					<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+					<li><a href="{{ site.baseurl }}/about.html">Sobre</a></li>
+					<li><a href="{{ site.baseurl }}/contact.html">Contato</a></li>	
+				</ul>
+
+			</div>
+			<!-- End Header ( Logo & Naviagtion ) -->
+
+		</header>
+		<!-- End Header -->
+
+
+		<!-- Start Content -->
+		<div id="content">
+			<div class="container">
+				<div class="portfolio-page portfolio-2column">
+
+					<!-- Start Big Heading -->
+					<div class="big-title text-center" data-animation="fadeInDown"
+						data-animation-delay="01">
+						<h1>Meus últimos <strong>Trabalhos</strong></h1>
+					</div>
+					<!-- End Big Heading -->
+
+					<p class="text-center">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+						quae ab illo inventore <br />veritatis et quasi architecto beatae
+						vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+						voluptas sit aspernatur aut odit aut fugit.
+					</p>
+
+
+
+					<ul id="portfolio-list" data-animated="fadeIn">
+						
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+								<p class="body">Desenho - Senna</p>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_1.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_1.jpg">
+                			</a>
+						</li>
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+								<p class="body">Quadro - Rosas</p>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_2.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_2.jpg">
+                			</a>
+						</li>
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+								<p class="body">Quadro - Paisagens</p>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_3.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_3.jpg">
+                			</a>
+						</li>
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+								<p class="body">Quadro - Rosas</p>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_4.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_4.jpg">
+                			</a>
+						</li>
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+								<p class="body">Quadro - Guitarra Less Pool</p>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_5.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_5.jpg">
+                			</a>
+						</li>
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+								<p class="body">Desenho - Corrida</p>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_6.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_6.jpg">
+                			</a>
+						</li>
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+								<p class="body">Desenho - Lufthansa</p>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_7.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_7.jpg">
+                			</a>
+						</li>
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+								<p class="body">Quadro - Flores</p>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_8.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_8.jpg">
+                			</a>
+						</li>
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_9.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_9.jpg">
+                			</a>
+						</li>
+						
+						<li>
+							<div class="portfolio-item-content">
+								<span class="header">Art´s Reges</span>
+								<p class="body">Quadro - Guitarra Less Pool</p>
+							</div> 
+							<a class="lightbox" title="Meus Trabalhos" href="{{ site.baseurl }}/images/portfolio-1/portfolio_5.jpg">
+                  				<i class="more">+</i>
+                  				<img alt="" src="{{ site.baseurl }}/images/portfolio-1/portfolio_5.jpg">
+                			</a>
+						</li>
+							
+						
+					</ul>
+
+
+				</div>
+				<!-- End Portfolio Items -->
+
+			</div>
+		</div>
+		<!-- End Content -->
+
+
+		<!-- Start Footer -->
+		<footer>
+			<div class="container">
+				<div class="row footer-widgets">
+
+					<!-- Start Subscribe & Social Links Widget -->
+					<div class="col-md-3">
+						<div class="footer-widget social-widget">
+							<h4>
+								Me siga nas redes sociais<span class="head-line"></span>
+							</h4>
+							<ul class="social-icons">
+								<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="instgram" href="#"><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- End Subscribe & Social Links Widget -->
+
+					<!-- Start Contact Widget -->
+					<div class="col-md-6">
+						<div class="footer-widget contact-widget">
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus
+								qui blanditiis praesentium voluptatum deleniti atque corrupti
+								quos dolores et quas molestias excepturi sint occaecati
+								cupiditate non provident</p>
+							<ul>
+								<li><span>Phone Number:</span> +01 234 567 890</li>
+								<li><span>Email:</span> regesvinicius.se@gmail.com</li>
+								<li><span>Website:</span> www.artsreges.com</li>
+							</ul>
+						</div>
+					</div>
+					<!-- End Contact Widget -->
+
+				</div>
+				<!-- .row -->
+
+				<!-- Start Copyright -->
+				<div class="copyright-section">
+					<div class="row">
+						<div class="col-md-6">
+							<p>&copy; 2016 Arts Reges - All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+				<!-- End Copyright -->
+
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+	</div>
+	<!-- End Container -->
+
+	<script type="text/javascript" src="{{ site.baseurl }}/js/script.js"></script>
+
+</body>
+
+</html>

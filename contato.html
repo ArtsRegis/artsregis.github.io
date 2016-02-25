@@ -6,12 +6,12 @@
 <head>
 
   <!-- Basic -->
-  <title>Margo | About Us</title>
+  <title>Art´s Reges | Portfolio</title>
 
   <!-- Define Charset -->
   <meta charset="utf-8">
 
-  <!-- Responsive etatag -->
+  <!-- Responsive Metatag -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Page Description and Author -->
@@ -22,7 +22,7 @@
 <!-- CSS  -->
 <link rel="stylesheet" href="http://artreges.com/asset/css/bootstrap.min.css" type="text/css" media="screen">
 <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
-<link rel="stylesheet" type="text/css" href="http://artreges.com/css/slicknav.css" media="screen">
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}{{ site.baseurl }}{{ site.baseurl }}css/slicknav.css" media="screen">
 <link rel="stylesheet" type="text/css" href="http://artreges.com/css/style.css" media="screen">
 <link rel="stylesheet" type="text/css" href="http://artreges.com/css/responsive.css" media="screen">
 <link rel="stylesheet" type="text/css" href="http://artreges.com/css/colors/red.css" title="red" media="screen" />
@@ -44,6 +44,7 @@
 <script type="text/javascript" src="http://artreges.com/js/jquery.nicescroll.min.js"></script>
 <script type="text/javascript" src="http://artreges.com/js/jquery.parallax.js"></script>
 <script type="text/javascript" src="http://artreges.com/js/jquery.slicknav.js"></script>
+
 
   <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -68,69 +69,100 @@
               <i class="fa fa-bars"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="http://artreges.com/index.html"><img alt="" src="http://artreges.com/images/art-reges.png"></a>
+            <a class="navbar-brand" href="home.html"><img alt="" src="http://artreges.com/images/art-reges.png"></a>
           </div>
           <div class="navbar-collapse collapse">
             
             <!-- Start Navigation List -->
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="http://artreges.com/index.html">Home</a></li>
-				<li><a href="http://artreges.com/about.html">Sobre</a></li>
-				<li><a href="http://artreges.com/contact.html">Contato</a></li>
+				<li><a href="http://artreges.com/home.html">Home</a></li>
+				<li><a href="http://artreges.com/sobre.html">Sobre</a></li>
+				<li><a href="http://artreges.com/contato.html">Contato</a></li>
 			</ul>
+            <!-- End Navigation List -->
             
           </div>
         </div>
-        
+
         <!-- Mobile Menu Start -->
-		<ul class="wpb-mobile-menu">
-			<li><a href="http://artreges.com/index.html">Home</a></li>
-			<li><a href="http://artreges.com/about.html">Sobre</a></li>
-			<li><a href="http://artreges.com/contact.html">Contato</a></li>	
-		</ul>
-        
+        <ul class="wpb-mobile-menu">
+          	<li><a href="http://artreges.com/home.html">Home</a></li>
+			<li><a href="http://artreges.com/sobre.html">Sobre</a></li>
+			<li><a href="http://artreges.com/contato.html">Contato</a></li>
+        </ul>
+
       </div>
-      <!-- End Header ( Logo & Naviagtion ) -->
 
     </header>
+    <!-- End Header -->
 
     <!-- Start Content -->
     <div id="content">
       <div class="container">
-        <div class="page-content">
+      
+      	<div class="hr1" style="margin-bottom:100px;"></div>
 
+        <div class="row">
 
-          <div class="row">
+          <div class="col-md-8">
 
-            <div class="col-md-7">
+            <!-- Classic Heading -->
+            <h4 class="classic-title"><span>Contate-me</span></h4>
 
-              <!-- Classic Heading -->
-              <h4 class="classic-title"><span>Vinicius Reges</span></h4>
-
-              <!-- Some Text -->
-              <p>Lorem Ipsum is simply dummy text of the <a title="Simple Tooltip" href="#" class="itl-tooltip" data-placement="top">printing</a> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Sed ut perspiciatis unde omnis iste natus error sit volup accusantium. Lorem ipsum dolor sit amet, consectetur.</p>
-
-            </div>
-
-            <div class="col-md-5">
-
-              <!-- Start Touch Slider -->
-              <div class="touch-slider" data-slider-navigation="true" data-slider-pagination="true">
-                <div class="item"><img alt="" src="http://artreges.com/images/portfolio-1/portfolio_1.jpg"></div>
-                <div class="item"><img alt="" src="http://artreges.com/images/portfolio-1/portfolio_2.jpg"></div>
-                <div class="item"><img alt="" src="http://artreges.com/images/portfolio-1/portfolio_3.jpg"></div>
+            <!-- Start Contact Form -->
+            <form role="form" action="http://formspree.io/regesvinicius.se@gmail.com"
+            	class="contact-form" id="contact-form" method="POST">
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" placeholder="Nome" name="name">
+                </div>
               </div>
-              <!-- End Touch Slider -->
+              <div class="form-group">
+                <div class="controls">
+                  <input type="email" class="email" placeholder="Email" name="email">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" class="requiredField" placeholder="Assunto" name="subject">
+                </div>
+              </div>
 
-            </div>
+              <div class="form-group">
+
+                <div class="controls">
+                  <textarea rows="7" placeholder="Sua menssagem" name="message"></textarea>
+                </div>
+              </div>
+              <button type="submit" id="submit" class="btn-system btn-large">Enviar</button>
+              <div id="success" style="color:#34495e;"></div>
+            </form>
+            <!-- End Contact Form -->
 
           </div>
 
-          <!-- Divider -->
-          <div class="hr1" style="margin-bottom:50px;"></div>
+          <div class="col-md-4">
+
+            <!-- Classic Heading -->
+            <h4 class="classic-title"><span>Informações</span></h4>
+
+            <!-- Some Info -->
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+
+            <!-- Divider -->
+            <div class="hr1" style="margin-bottom:10px;"></div>
+
+            <!-- Info - Icons List -->
+            <ul class="icons-list">
+              <li><i class="fa fa-globe">  </i> <strong>Endereço:</strong> 1234 Street Name, Bangladesh.</li>
+              <li><i class="fa fa-envelope-o"></i> <strong>Email:</strong> regesvinicius.se@gmail.com</li>
+              <li><i class="fa fa-mobile"></i> <strong>Celular:</strong> +12 345 678 001</li>
+            </ul>
+
+          </div>
 
         </div>
+
       </div>
     </div>
     <!-- End content -->
@@ -148,7 +180,7 @@
 								Me siga nas redes sociais<span class="head-line"></span>
 							</h4>
 							<ul class="social-icons">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="facebook" href="https://www.facebook.com/vinicius.regesdossantos" target="_blank"><i class="fa fa-facebook"></i></a></li>
 								<li><a class="instgram" href="#"><i class="fa fa-instagram"></i></a></li>
 							</ul>
 						</div>
@@ -182,14 +214,14 @@
 						</div>
 					</div>
 				</div>
+				<!-- End Copyright -->
 
 			</div>
 		</footer>
+    <!-- End Footer -->
 
   </div>
   <!-- End Container -->
-
-  <script type="text/javascript" src="http://artreges.com/js/script.js"></script>
 
 </body>
 
